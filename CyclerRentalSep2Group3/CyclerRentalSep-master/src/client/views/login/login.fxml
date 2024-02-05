@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9A7485;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.client.views.login.LoginController">
+   <children>
+      <Label layoutX="220.0" layoutY="100.0" text="Welcome!">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="66.0" layoutY="175.0" spacing="20.0">
+         <Label text="Email:" />
+         <TextField fx:id="usernameTextField" prefWidth="300.0" promptText="JhonDoe@yahoo.com" style="-fx-background-radius: 50;" />
+      </HBox>
+      <HBox layoutX="66.0" layoutY="225.0" spacing="20.0">
+         <Label text="Password:" />
+         <PasswordField fx:id="passwordPasswordField" prefWidth="300.0" promptText="********" style="-fx-background-radius: 50;" />
+      </HBox>
+      <Button fx:id="loginButtton" onAction="#login" layoutX="255.0" layoutY="300.0" mnemonicParsing="false" prefWidth="145.0" style="-fx-background-radius: 50;" text="Sign in" />
+
+      <!-- VBox to group "Not a member?" label and "Register" button -->
+      <VBox layoutX="440.0" layoutY="195.0" spacing="10.0">
+         <Label text="Not a member?">
+            <font>
+               <Font name="System Bold" size="20.0" />
+            </font>
+         </Label>
+         <Button fx:id="registerButton" onAction="#openSignUpView" mnemonicParsing="false" prefWidth="80.0" style="-fx-background-radius: 50;" text="Register" />
+      </VBox>
+
+      <!-- loginMessageLabel -->
+      <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="28.0" layoutY="77.0" prefHeight="18.0" prefWidth="250.0" textFill="RED" />
+   </children>
+</AnchorPane>
+
+
+

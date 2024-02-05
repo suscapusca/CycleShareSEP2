@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color:#F0F0F0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.client.views.bikes.createBike.CreateBikeController">
+   <children>
+      <HBox prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #520D2C;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="115.0" prefWidth="242.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="226.0" style=" -fx-text-fill: white;-fx-font-size:30;" text="Create Bike">
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Pane layoutX="0" layoutY="100.0" prefHeight="500" prefWidth="700.0" style="-fx-background-color: #9A7485;">
+         <children>
+            <Label layoutX="30" layoutY="50.0" style="-fx-font-size:20;" text="Brand" />
+            <TextField fx:id="brand" layoutX="30" layoutY="80.0" style="-fx-font-size:16;" />
+
+            <Label layoutX="330" layoutY="50.0" prefHeight="30.0" prefWidth="199.0" style="-fx-font-size:20;" text="Category" />
+            <TextField fx:id="category" layoutX="330" layoutY="80.0" style="-fx-font-size:16;" />
+
+            <Label layoutX="30" layoutY="120.0" prefHeight="30.0" prefWidth="199.0" style="-fx-font-size:20;" text="Availability" />
+            <TextField fx:id="availability" layoutX="30" layoutY="150.0" style="-fx-font-size:16;" />
+
+            <Label layoutX="330" layoutY="120.0" prefHeight="30.0" prefWidth="199.0" style="-fx-font-size:20;" text="Year" />
+            <TextField fx:id="year" layoutX="330" layoutY="150.0" style="-fx-font-size:16;" />
+
+            <Label layoutX="30" layoutY="190" prefHeight="30.0" prefWidth="199.0" style="-fx-font-size:20;" text="Price" />
+            <TextField fx:id="price" layoutX="30" layoutY="220.0" style="-fx-font-size:16;" />
+            <Button layoutX="570" layoutY="420.0" mnemonicParsing="false" onAction="#createBike" style="-fx-font-size:20;" text="Create" />
+            <Button fx:id="backButton" layoutX="472.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#backPreviousScene" style="-fx-font-size:20;" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

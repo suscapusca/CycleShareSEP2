@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.client.views.bookings.listbooking.ListBookingsController">
+   <children>
+      <HBox prefHeight="115.0" prefWidth="700.0" style="-fx-background-color: #520D2C;">
+         <children>
+            <VBox prefHeight="55.0" prefWidth="50.0">
+               <children>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="115.0" prefWidth="242.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="206.0" style=" -fx-text-fill: white;-fx-font-size:30;" text="Bookings list" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="-1.0" layoutY="115.0" prefHeight="46.0" prefWidth="702.0" style="-fx-background-color: #9A7485;" />
+      <Pane layoutX="-13.0" layoutY="161.0" prefHeight="501.0" prefWidth="714.0" style="-fx-background-color: #9A7485;">
+         <children>
+            <TableView fx:id="tableView" editable="true" layoutX="30.0" layoutY="50.0" prefHeight="400.0" prefWidth="640">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="71.0" text="ID" />
+                  <TableColumn fx:id="customerid" prefWidth="153.0" text="Customer ID" />
+                  <TableColumn fx:id="bikeid" prefWidth="143.0" text="Bike ID" />
+                  <TableColumn fx:id="startingdate" prefWidth="91.0" text="Start Date" />
+                  <TableColumn fx:id="enddate" prefWidth="69.0" text="End Date" />
+                  <TableColumn fx:id="finalprice" prefWidth="112.0" text="Final Price" />
+               </columns>
+            </TableView>
+            <Button layoutX="607.0" layoutY="17.0" mnemonicParsing="false" onAction="#deleteBooking" style="-fx-background-color: #393E46;" text="Delete" textFill="WHITE" />
+            <Button layoutX="544.0" layoutY="17.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #393E46;" text="Back" textFill="WHITE" />
+            <Button layoutX="30.0" layoutY="17.0" mnemonicParsing="false" onAction="#refreshTable" style="-fx-background-color: #393E46;" text="Refresh" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
